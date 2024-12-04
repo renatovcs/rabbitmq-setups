@@ -14,4 +14,4 @@ services:
       RABBITMQ_DEFAULT_PASS: guest
       RABBITMQ_DEFAULT_VHOST: /
       RABBITMQ_CONFIG_FILE: /etc/rabbitmq/rabbitmq
-      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: "-rabbit definitions '/etc/rabbitmq/definitions.json'"
+      RABBITMQ_LOAD_DEFINITIONS: /etc/rabbitmq/definitions.json
