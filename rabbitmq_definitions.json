@@ -1,0 +1,49 @@
+{
+    "rabbit_version": "4.0.4",
+    "users": [
+      {
+        "name": "guest",
+        "password": "guest",
+        "tags": "administrator"
+      }
+    ],
+    "vhosts": [
+      {
+        "name": "/"
+      }
+    ],
+    "permissions": [
+      {
+        "user": "guest",
+        "vhost": "/",
+        "configure": ".*",
+        "write": ".*",
+        "read": ".*"
+      }
+    ],
+    "queues": [
+      {
+        "name": "data_queue",
+        "vhost": "/",
+        "durable": true
+      }
+    ],
+    "exchanges": [
+      {
+        "name": "data_exchange",
+        "vhost": "/",
+        "type": "direct",
+        "durable": true
+      }
+    ],
+    "bindings": [
+      {
+        "source": "data_exchange",
+        "vhost": "/",
+        "destination": "data_queue",
+        "destination_type": "queue",
+        "routing_key": "data_queue"
+      }
+    ]
+  }
+  
