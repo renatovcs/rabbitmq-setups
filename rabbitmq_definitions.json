@@ -1,9 +1,9 @@
 {
-    "rabbit_version": "4.0.4",
+    "rabbit_version": "3.10.7",
     "users": [
       {
         "name": "guest",
-        "password": "rbvrhQWvO9QQqfEjyoPYIYbwo8S9D1iEIn3VhPodFWZhwyDo",
+        "password": "guest",
         "tags": "administrator"
       }
     ],

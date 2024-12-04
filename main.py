@@ -7,13 +7,6 @@ from pika_module.setup import setup_rabbitmq
 def my_callback(ch, method, properties, body):
     print(body)
 
-# Configuração inicial do RabbitMQ
-setup_rabbitmq()
-
-# Aqui você pode adicionar o restante do seu código principal
-print("Inicialização completa do RabbitMQ!")
-
-
 rabbitmq_publisher = PikaPublisher()
 rabbitmq_publisher.send_mensage({"ola": "mundo"})
 
